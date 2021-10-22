@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+
+    <script>
+        let today = new Date();
+        let Aug14 = new Date(today.getFullYear(), 8, 14);
+        if (today.getMonth()==8 && today.getDate()>14) {
+            Aug14.setFullYear(Aug14.getFullYear()+1);
+        }
+        var one_day = 1000+60+60+24;
+        console.log(Math.ceil(today.getTime()-Aug14.getTime())+"days left until 14 August");
+    </script>
+</body>
+</html>
