@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>Question 1</h1>
+    <p>Today is : <span id="day"></span></p>
+    <p>Current Time is : <span id="time"></span></p>
+    <h1>Question 2</h1>
+    <p>Date : <span id="date"></span></p>
+
+    <script>
+        const d = new Date();
+        console.log(d.getDay);
+        let day = document.getElementById("day")
+        switch (d.getDay) {
+            case 0:
+                day.innerHTML = "Sunday"
+                break;
+            case 1:
+                day.innerHTML = "Monday"
+                break;
+            case 2:
+                day.innerHTML = "Tuesday"
+                break;
+            case 3:
+                day.innerHTML = "Wednesday"
+                break;
+            case 4:
+                day.innerHTML = "Thursday"
+                break;
+            case 5:
+                day.innerHTML = "Friday"
+                break;
+            case 6:
+                day.innerHTML = "Saturday"
+                break;
+        }
+    </script>
+</body>
+</html>
